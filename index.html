@@ -130,7 +130,14 @@ Belgium Jobs Board
 </div>
 
 <div class="section" id="jobs">
-<h2>Populaire Vacatures in België</h2>
+<h2><section class="jobs">
+<h2>Latest Jobs in Belgium</h2>
+
+<div id="jobs-container">
+Loading jobs...
+</div>
+
+</section></h2>
 
 <div class="job-card">
 <div class="job-title">CNC Operator – Antwerpen</div>
@@ -167,5 +174,42 @@ document.getElementById("jobs").scrollIntoView({behavior:'smooth'});
 }
 </script>
 
-</body>
+<script>
+
+const feedURL = "https://joveo-c08b42a8.s3-accelerate.amazonaws.com/918e767b.xml";
+
+fetch(feedURL)
+.then(response => response.text())
+.then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+.then(data => {
+
+let jobs = data.querySelectorAll("job");
+let container = document.getElementById("jobs-container");
+
+container.innerHTML = "";
+
+jobs.forEach((job, index) => {
+
+if(index < 20){
+
+let title = job.querySelector("title")?.textContent;
+let city = job.querySelector("city")?.textContent;
+let company = job.querySelector("company")?.textContent;
+let url = job.querySelector("url")?.textContent;
+
+container.innerHTML += `
+<div class="job-card">
+<h3>${title}</h3>
+<p>${company} – ${city}</p>
+<a href="${url}" target="_blank">Apply Now</a>
+</div>
+`;
+
+}
+
+});
+
+});
+
+</script></body>
 </html>
