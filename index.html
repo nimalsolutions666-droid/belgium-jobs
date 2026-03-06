@@ -1,95 +1,15 @@
-index.html
-style.css
-script.js
-it-jobs-belgium.html
-warehouse-jobs-belgium.html
-logistics-jobs-belgium.html
-brussels-jobs.html
-antwerp-jobs.html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Belgium Jobs Board | Find Jobs in Belgium</title>
+<title>Belgium Jobs Board</title>
 
-<meta name="description" content="Find the latest jobs in Belgium including IT, warehouse, logistics and production jobs. Apply online today.">
+<style>
 
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">Belgium Jobs Board</div>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="it-jobs-belgium.html">IT Jobs</a>
-<a href="warehouse-jobs-belgium.html">Warehouse</a>
-<a href="logistics-jobs-belgium.html">Logistics</a>
-<a href="brussels-jobs.html">Brussels Jobs</a>
-<a href="antwerp-jobs.html">Antwerp Jobs</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Find Your Next Job in Belgium</h1>
-
-<p>Technology • Logistics • Production • Administration</p>
-
-<a href="#jobs" class="btn">Browse Jobs</a>
-
-</section>
-
-<section class="section">
-
-<h2>Popular Job Categories</h2>
-
-<div class="categories">
-
-<a href="it-jobs-belgium.html">IT Jobs Belgium</a>
-<a href="warehouse-jobs-belgium.html">Warehouse Jobs</a>
-<a href="logistics-jobs-belgium.html">Logistics Jobs</a>
-<a href="brussels-jobs.html">Jobs in Brussels</a>
-<a href="antwerp-jobs.html">Jobs in Antwerp</a>
-
-</div>
-
-</section>
-
-<section id="jobs" class="section">
-
-<h2>Latest Jobs in Belgium</h2>
-
-<div id="jobs-container" class="jobs">
-
-Loading jobs...
-
-</div>
-
-</section>
-
-<footer>
-
-Belgium Jobs Board © 2026
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
 body{
 font-family:Arial;
 margin:0;
@@ -100,14 +20,7 @@ header{
 background:#1a73e8;
 color:white;
 padding:15px 10%;
-display:flex;
-justify-content:space-between;
-}
-
-nav a{
-color:white;
-margin-left:15px;
-text-decoration:none;
+font-size:22px;
 }
 
 .hero{
@@ -130,22 +43,6 @@ border-radius:6px;
 
 .section{
 padding:50px 10%;
-}
-
-.categories{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:15px;
-}
-
-.categories a{
-background:white;
-padding:20px;
-text-align:center;
-border-radius:8px;
-text-decoration:none;
-color:#333;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 .jobs{
@@ -177,6 +74,45 @@ color:#aaa;
 text-align:center;
 padding:20px;
 }
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+Belgium Jobs Board
+</header>
+
+<section class="hero">
+
+<h1>Find Your Next Job in Belgium</h1>
+
+<p>Technology • Logistics • Production • Administration</p>
+
+<a href="#jobs" class="btn">Browse Jobs</a>
+
+</section>
+
+<section id="jobs" class="section">
+
+<h2>Latest Jobs in Belgium</h2>
+
+<div id="jobs-container" class="jobs">
+
+Loading jobs...
+
+</div>
+
+</section>
+
+<footer>
+Belgium Jobs Board © 2026
+</footer>
+
+<script>
+
 const feedURL="https://joveo-c08b42a8.s3-accelerate.amazonaws.com/918e767b.xml";
 
 fetch(feedURL)
@@ -195,7 +131,7 @@ container.innerHTML="";
 
 jobs.forEach((job,index)=>{
 
-if(index<30){
+if(index<20){
 
 let title=job.querySelector("title")?.textContent;
 let company=job.querySelector("company")?.textContent;
@@ -223,47 +159,8 @@ container.innerHTML+=`
 });
 
 });
-  <!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Jobs in Belgium</title>
-
-<link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">Belgium Jobs Board</div>
-
-</header>
-
-<section class="hero">
-
-<h1>Jobs in Belgium</h1>
-
-<p>Browse the latest jobs available today.</p>
-
-</section>
-
-<section class="section">
-
-<div id="jobs-container" class="jobs">
-
-Loading jobs...
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
+</script>
 
 </body>
 
