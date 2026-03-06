@@ -1,208 +1,221 @@
+index.html
+style.css
+script.js
+it-jobs-belgium.html
+warehouse-jobs-belgium.html
+logistics-jobs-belgium.html
+brussels-jobs.html
+antwerp-jobs.html
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>Vacatures België 2026 | Jobs in België | Direct Solliciteren</title>
+<title>Belgium Jobs Board | Find Jobs in Belgium</title>
 
-<meta name="description" content="Vind de nieuwste vacatures in België. Solliciteer direct op techniek, productie en administratieve jobs. Start snel met jouw nieuwe job.">
-<meta name="keywords" content="vacatures België, jobs in België, CNC operator job, productie job België, technieker vacature">
-<meta name="robots" content="index, follow">
+<meta name="description" content="Find the latest jobs in Belgium including IT, warehouse, logistics and production jobs. Apply online today.">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial, sans-serif;background:#f5f7fa;color:#1f2937}
-
-.topbar{
-background:#0a66c2;
-color:white;
-padding:18px 40px;
-font-size:22px;
-font-weight:bold;
-}
-
-.hero{
-background:#eef3ff;
-padding:70px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:38px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:18px;
-color:#4b5563;
-margin-bottom:25px;
-}
-
-.cta-btn{
-background:#0a66c2;
-color:white;
-padding:15px 28px;
-border:none;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:50px 20px;
-}
-
-.section{
-margin-bottom:50px;
-}
-
-.job-card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.05);
-margin-bottom:20px;
-transition:0.3s;
-}
-
-.job-card:hover{
-transform:translateY(-5px);
-box-shadow:0 10px 30px rgba(0,0,0,0.08);
-}
-
-.job-title{
-font-size:20px;
-font-weight:bold;
-margin-bottom:8px;
-}
-
-.job-location{
-color:#6b7280;
-font-size:14px;
-margin-bottom:10px;
-}
-
-.apply-btn{
-background:#16a34a;
-color:white;
-padding:10px 18px;
-border:none;
-border-radius:8px;
-cursor:pointer;
-font-weight:bold;
-}
-
-footer{
-text-align:center;
-padding:40px;
-font-size:14px;
-color:#6b7280;
-background:#f0f2f5;
-}
-
-@media(max-width:768px){
-.hero h1{font-size:28px}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div class="topbar">
-Belgium Jobs Board
-</div>
+<header>
+
+<div class="logo">Belgium Jobs Board</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="it-jobs-belgium.html">IT Jobs</a>
+<a href="warehouse-jobs-belgium.html">Warehouse</a>
+<a href="logistics-jobs-belgium.html">Logistics</a>
+<a href="brussels-jobs.html">Brussels Jobs</a>
+<a href="antwerp-jobs.html">Antwerp Jobs</a>
+
+</nav>
+
+</header>
 
 <section class="hero">
-<h1>Vind jouw nieuwe job in België</h1>
-<p>Techniek • Productie • Logistiek • Administratie</p>
-<button class="cta-btn" onclick="scrollToJobs()">Bekijk Vacatures</button>
+
+<h1>Find Your Next Job in Belgium</h1>
+
+<p>Technology • Logistics • Production • Administration</p>
+
+<a href="#jobs" class="btn">Browse Jobs</a>
+
 </section>
 
-<div class="container">
+<section class="section">
 
-<div class="section">
-<h2>Waarom kiezen voor ons?</h2>
-<p>Wij tonen de nieuwste en meest betrouwbare vacatures in België. Direct solliciteren, snelle reactie en stabiele werkgevers.</p>
+<h2>Popular Job Categories</h2>
+
+<div class="categories">
+
+<a href="it-jobs-belgium.html">IT Jobs Belgium</a>
+<a href="warehouse-jobs-belgium.html">Warehouse Jobs</a>
+<a href="logistics-jobs-belgium.html">Logistics Jobs</a>
+<a href="brussels-jobs.html">Jobs in Brussels</a>
+<a href="antwerp-jobs.html">Jobs in Antwerp</a>
+
 </div>
 
-<div class="section" id="jobs">
-<h2><section class="jobs">
+</section>
+
+<section id="jobs" class="section">
+
 <h2>Latest Jobs in Belgium</h2>
 
-<div id="jobs-container">
+<div id="jobs-container" class="jobs">
+
 Loading jobs...
-</div>
-
-</section></h2>
-
-<div class="job-card">
-<div class="job-title">CNC Operator – Antwerpen</div>
-<div class="job-location">📍 Antwerpen, België</div>
-<p>Fulltime functie met competitief salaris en doorgroeimogelijkheden.</p>
-<button class="apply-btn">Solliciteer Nu</button>
-</div>
-
-<div class="job-card">
-<div class="job-title">Productie Medewerker – Genk</div>
-<div class="job-location">📍 Genk, België</div>
-<p>Stabiele productieomgeving met snelle start mogelijkheid.</p>
-<button class="apply-btn">Solliciteer Nu</button>
-</div>
-
-<div class="job-card">
-<div class="job-title">Technieker – Brussel</div>
-<div class="job-location">📍 Brussel, België</div>
-<p>Werk met moderne apparatuur in een professionele werkomgeving.</p>
-<button class="apply-btn">Solliciteer Nu</button>
-</div>
 
 </div>
 
-</div>
+</section>
 
 <footer>
-© 2026 Belgium Jobs | Alle rechten voorbehouden
+
+Belgium Jobs Board © 2026
+
 </footer>
 
-<script>
-function scrollToJobs(){
-document.getElementById("jobs").scrollIntoView({behavior:'smooth'});
+<script src="script.js"></script>
+
+</body>
+
+</html>
+body{
+font-family:Arial;
+margin:0;
+background:#f5f7fb;
 }
-</script>
 
-<script>
+header{
+background:#1a73e8;
+color:white;
+padding:15px 10%;
+display:flex;
+justify-content:space-between;
+}
 
-const feedURL = "https://joveo-c08b42a8.s3-accelerate.amazonaws.com/918e767b.xml";
+nav a{
+color:white;
+margin-left:15px;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:#e8f0fe;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.btn{
+background:#1a73e8;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.section{
+padding:50px 10%;
+}
+
+.categories{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.categories a{
+background:white;
+padding:20px;
+text-align:center;
+border-radius:8px;
+text-decoration:none;
+color:#333;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.jobs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.job-card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.apply{
+background:#1a73e8;
+color:white;
+padding:8px 15px;
+text-decoration:none;
+border-radius:5px;
+display:inline-block;
+margin-top:10px;
+}
+
+footer{
+background:#111;
+color:#aaa;
+text-align:center;
+padding:20px;
+}
+const feedURL="https://joveo-c08b42a8.s3-accelerate.amazonaws.com/918e767b.xml";
 
 fetch(feedURL)
-.then(response => response.text())
-.then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-.then(data => {
 
-let jobs = data.querySelectorAll("job");
-let container = document.getElementById("jobs-container");
+.then(response=>response.text())
 
-container.innerHTML = "";
+.then(str=>new window.DOMParser().parseFromString(str,"text/xml"))
 
-jobs.forEach((job, index) => {
+.then(data=>{
 
-if(index < 20){
+let jobs=data.querySelectorAll("job");
 
-let title = job.querySelector("title")?.textContent;
-let city = job.querySelector("city")?.textContent;
-let company = job.querySelector("company")?.textContent;
-let url = job.querySelector("url")?.textContent;
+let container=document.getElementById("jobs-container");
 
-container.innerHTML += `
+container.innerHTML="";
+
+jobs.forEach((job,index)=>{
+
+if(index<30){
+
+let title=job.querySelector("title")?.textContent;
+let company=job.querySelector("company")?.textContent;
+let city=job.querySelector("city")?.textContent;
+let url=job.querySelector("url")?.textContent;
+
+container.innerHTML+=`
+
 <div class="job-card">
+
 <h3>${title}</h3>
-<p>${company} – ${city}</p>
-<a href="${url}" target="_blank">Apply Now</a>
+
+<p>${company}</p>
+
+<p>${city}, Belgium</p>
+
+<a class="apply" href="${url}" target="_blank">Apply Now</a>
+
 </div>
+
 `;
 
 }
@@ -210,6 +223,48 @@ container.innerHTML += `
 });
 
 });
+  <!DOCTYPE html>
+<html lang="en">
 
-</script></body>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Jobs in Belgium</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Belgium Jobs Board</div>
+
+</header>
+
+<section class="hero">
+
+<h1>Jobs in Belgium</h1>
+
+<p>Browse the latest jobs available today.</p>
+
+</section>
+
+<section class="section">
+
+<div id="jobs-container" class="jobs">
+
+Loading jobs...
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
 </html>
